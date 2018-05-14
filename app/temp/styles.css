@@ -343,168 +343,168 @@ template {
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('Merriweather-Light.woff') format('woff');
+    src: url('../fonts/Merriweather-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('Merriweather-BoldItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('Merriweather-LightItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('Merriweather-Regular.woff') format('woff');
+    src: url('../fonts/Merriweather-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('Merriweather-Italic.woff') format('woff');
+    src: url('../fonts/Merriweather-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-BoldItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Black.woff') format('woff');
+    src: url('../fonts/Merriweather-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-BlackItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Bold.woff') format('woff');
+    src: url('../fonts/Merriweather-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-BoldItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Regular.woff') format('woff');
+    src: url('../fonts/Merriweather-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-LightItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Black.woff') format('woff');
+    src: url('../fonts/Merriweather-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Light.woff') format('woff');
+    src: url('../fonts/Merriweather-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Black.woff') format('woff');
+    src: url('../fonts/Merriweather-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Italic.woff') format('woff');
+    src: url('../fonts/Merriweather-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Regular.woff') format('woff');
+    src: url('../fonts/Merriweather-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Italic.woff') format('woff');
+    src: url('../fonts/Merriweather-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Light.woff') format('woff');
+    src: url('../fonts/Merriweather-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Bold.woff') format('woff');
+    src: url('../fonts/Merriweather-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-LightItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-BlackItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-BlackItalic.woff') format('woff');
+    src: url('../fonts/Merriweather-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url('../../fonts/Merriweather-Bold.woff') format('woff');
+    src: url('../fonts/Merriweather-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -627,12 +627,14 @@ body{
     }
 
 .large-hero{
+	display: block;
 	position: relative;
-	background-image: url(../../images/large-hero.png);
-	background-position: center;
+	background-image: url(../images/large-hero.png);
+	background-position:center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
+	background-attachment: fixed;
+	max-width: 100%;
 	height: 500px;
 }
 
@@ -715,3 +717,124 @@ body{
 		word-spacing: 1px;
 		color: #FFF;
 	}
+
+.content-one, .content-two{
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 640px){
+
+.content-one, .content-two{
+		height: 540px
+}
+	}
+
+.content-one{
+	color: black;
+	padding-top: 100px;
+	padding-right: 30px;
+	padding-left: 20px;
+}
+
+.content-one--info h1{
+			padding: 0 0 32px 0;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 35px;
+			font-weight: 300;
+		}
+
+.content-one--info p{
+			padding: 0 0 35px 0;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 13px;
+			line-height: 25px;
+		}
+
+.content-two{
+	position: relative;
+
+}
+
+.content-two--iphone-image img{
+		display: none;
+		visibility: hidden;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		overflow: hidden;
+		top: -600px;
+		left: -200px;
+		-webkit-transform: scale(.5);
+		        transform: scale(.5);
+	}
+
+@media (min-width: 640px){
+
+.content-two--iphone-image img{
+			display: block;
+			visibility: visible
+	}
+		}
+
+@media (min-width: 801px){
+
+.content-two--iphone-image img{
+			-webkit-transform: scale(.7);
+			        transform: scale(.7);
+			top: -700px;
+			left: -170px
+	}
+		}
+
+@media (min-width: 950px){
+
+.content-two--iphone-image img{
+			left:-120px;
+			-webkit-transform: scale(.8);
+			        transform: scale(.8)
+	}
+		}
+
+@media (min-width: 1200px){
+
+.content-two--iphone-image img{
+			-webkit-transform: scale(1);
+			        transform: scale(1)
+	}
+	}
+
+.content-two--info{
+		padding-left: 20px;
+	}
+
+@media (min-width: 640px){
+
+.content-two--info{
+			padding-top: 171px
+	}
+		}
+
+@media (min-width: 950px){
+
+.content-two--info{
+			padding-top: 300px
+	}
+		}
+
+@media (min-width: 1200px){
+
+.content-two--info{
+			padding-top: 280px
+	}
+	}
+
+.content-two--info p{
+			padding-bottom: 35px;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 13px;
+			line-height: 25px;
+		}

@@ -17,7 +17,7 @@ gulp.task('css', function(){
 		console.log(errorInfo.toString());
 		this.emit('end');
 	})
-	.pipe(gulp.dest('app/temp/styles'))
+	.pipe(gulp.dest('app/temp'))
 	.pipe(browserSync.reload({
 		stream:true
 	}))
@@ -47,8 +47,5 @@ gulp.task('default', function(callback){
 	runSequence('css',['browserSync', 'watch'],
 	callback);
 });
-
-
-
 
 
