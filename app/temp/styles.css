@@ -341,6 +341,10 @@ template {
   display: none;
 }
 
+/*============================================================================
+Fonts Starts!!!
+============================================================================*/
+
 @font-face {
     font-family: 'Merriweather';
     src: url('../fonts/Merriweather-Light.woff') format('woff');
@@ -508,6 +512,14 @@ template {
     font-weight: bold;
     font-style: normal;
 }
+
+/*============================================================================
+Fonts Ends!!!
+============================================================================*/
+
+/*============================================================================
+Base styles Starts!!!
+============================================================================*/
 
 *{box-sizing: border-box;}
 
@@ -515,6 +527,14 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+/*============================================================================
+Base styles Ends!!!
+============================================================================*/
+
+/*============================================================================
+Grid Layout 12Col Starts!!!
+============================================================================*/
 
 *:before,
     *:after {
@@ -626,6 +646,14 @@ body{
         .col-wd-12 {width: 100%;}
     }
 
+/*============================================================================
+    Grid Layout 12Col Ends!!!
+    ============================================================================*/
+
+/*============================================================================
+Large-Hero Starts!!! (section: 1)
+============================================================================*/
+
 .large-hero{
 	display: block;
 	position: relative;
@@ -634,17 +662,17 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 500px;
+	height: 600px;
 }
 
-@media (min-width: 800px){
+@media only screen and (min-width: 800px){
 
 .large-hero{
 		height: 766px
 }
 	}
 
-@media (min-width: 1200px){
+@media only screen and (min-width: 1200px){
 
 .large-hero{
 		height: 950px
@@ -682,8 +710,6 @@ body{
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	        transform: translateY(-50%);
-	
-
 }
 
 .website-description h1{
@@ -703,14 +729,14 @@ body{
 		font-size: 35px;
 	}
 
-@media (min-width: 320px){
+@media only screen and (min-width: 320px){
 
 .website-description .website-description--heading h1{
 			font-size: 45px
 	}
     }
 
-@media (min-width: 430px){
+@media only screen and (min-width: 430px){
 
 .website-description .website-description--heading h1{
 			font-size: 60px
@@ -725,11 +751,30 @@ body{
 		color: #FFF;
 	}
 
+/*============================================================================
+Large-Hero Ends!!!
+============================================================================*/
+
+/*============================================================================
+Content Starts!!! (section: 2)
+============================================================================*/
+
 .main-content{
 	width: 100%;
-	height: 540px;
-	background-color: lightpink;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
 }
+
+@media only screen and (min-width: 800px){
+
+.main-content{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 50px
+}
+	}
 
 .content{
 	width: 100%;
@@ -741,10 +786,17 @@ body{
 		padding: 0 0 32px 0;
 		margin: 0;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 35px;
+		font-size: 31px;
 		font-weight: 300;
 		line-height: 24px;
 	}
+
+@media only screen and (min-width: 640px){
+
+.content h1{
+			font-size: 35px
+	}
+		}
 
 .content P{
 		padding-bottom: 35px;
@@ -756,57 +808,117 @@ body{
 	}
 
 .content-one{
-	padding-top: 115px;
+	padding-top: 100px;
+	position: relative;
 }
 
-.content-one .content:first-child{
-		padding-right:30px;
+@media only screen and (min-width: 640px){
+
+.content-one{
+		padding-right: 30px;
+		padding-top: 115px
+}
 	}
 
 .content-one--iphone-image img{
 		position: absolute;
-		display: block;
-		bottom: -100%;
-		right: 30px;
-		padding: 0;
-		margin: 0;
+		display: none;
+		visibility: hidden;
+		right: -90px;
+		bottom:0;
+		-webkit-transform: scale(.7);
+		        transform: scale(.7);
 	}
 
-.content-two .content:first-child{
-		padding-right:30px;
+@media only screen and (min-width: 960px){
+
+.content-one--iphone-image img{
+			display: block;
+			visibility: visible
 	}
+		}
+
+@media only screen and (min-width: 1200px){
+
+.content-one--iphone-image img{
+			-webkit-transform: scale(.9);
+			        transform: scale(.9);
+			right: 0
+	}
+		}
+
+@media only screen and (min-width: 1290px){
+
+.content-one--iphone-image img{
+			-webkit-transform: scale(1);
+			        transform: scale(1)
+	}
+		}
+
+@media only screen and (min-width: 2048px){
+
+.content-one--iphone-image img{
+			right: -30px
+	}
+		}
+
+@media only screen and (min-width: 3500px){
+
+.content-one--iphone-image img{
+			right: -300px
+	}
+		}
+
+@media only screen and (min-width: 640px){
+
+.content-two--info-one{
+			padding-right: 30px
+	}
+		}
+
+/*============================================================================
+Content Ends!!!
+============================================================================*/
+
+/*===========================================================================
+Gallery start!!! (section: 3)
+===========================================================================*/
+
+@media only screen and (min-width: 800px){
 
 .gallery{
-	padding-left: 20px;
-	padding-right: 20px;
+		padding-left: 20px;
+		padding-right: 20px
 }
+	}
 
 .gallery-box{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	max-width: 400px;
+	max-width: 100%;
 	height: 280px;
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 50px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-weight: 300;
 	color: #FFF;
-
 }
 
-.gallery-box-four--large{
-		max-width: 400px;
+@media only screen and (min-width: 500px){
+
+.gallery-box{
+		padding-left: 40px;
+		padding-right: 40px
+}
 	}
 
-@media (min-width: 960px){
-
-.gallery-box-four--large{
-			max-width: 800px
-	}
-		}
+/*		max-width: 400px;
+		@media (min-width: 960px){
+			max-width: 800px;
+		}*/
 
 @media (min-width: 960px){
 
@@ -819,8 +931,15 @@ body{
 		font-weight: 300;
 		font-size: 30px;
 		margin: 0;
-		padding-bottom: 20px;
+		padding-bottom: 0px;
 	}
+
+@media  only screen and (min-width: 300px) {
+
+.gallery-box h2{
+			padding-bottom: 20px
+	}
+		}
 
 .gallery-box p{	
 		max-width: 300px;
@@ -829,19 +948,31 @@ body{
 	}
 
 .gallery-box a{
+		transition: all .5s;
 		position: absolute;
-		bottom: 60px;
-		display: inline-block;
-		padding-top: 30px;
+		bottom: 40px;
 		text-decoration: none;
 		color: #FFF;
 		font-size: 14px;
 		font-weight: 600;
+
 	}
+
+@media only screen and (min-width:700px){
+
+.gallery-box a{
+			bottom:60px
+
+	}
+		}
+
+.gallery-box a:hover{
+			-webkit-transform: scale(1.1);
+			        transform: scale(1.1);
+		}
 
 .gallery-box .arrows{
 		padding-left: 10px;
-
 	}
 
 .gallery-box-one{
@@ -863,3 +994,198 @@ body{
 .gallery-box-five{
 	background-color: #82ca9c;
 }
+
+.gallery-box-six{
+	background-image: url('../images/gallery/box-6.png');
+}
+
+.gallery-box-six{
+	display: block;
+	visibility: visible;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.gallery-box-six{
+		display: none;
+		visibility: hidden
+}
+	}
+
+/*============================================================================
+Gallery ends!!!
+============================================================================*/
+
+/*============================================================================
+features & features-two Starts!!! (section: 4 & 6) Reusable Properties
+============================================================================*/
+
+.features{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 95px;
+	padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 800px){
+
+.features{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 160px
+}
+	}
+
+.features-heading h1{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 35px;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 50px;
+	}
+
+@media only screen and (min-width: 430px){
+
+.features-heading h1{
+			padding-bottom: 50px
+	}
+    }
+
+.features-info{
+		padding-right: 0px;
+}
+
+@media only screen and (min-width: 530px){
+
+.features-info{
+			padding-right: 30px
+}
+	}
+
+.features-info h1{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 24px;
+		color: rgba(0,0,0,0.5);
+	}
+
+.features-info p{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(0,0,0,0.5);
+	}
+
+.features-two{
+	background-color: rgb(130,202,156);
+}
+
+.features-two-heading h1{color: #FFF;}
+
+.features-two .features-info h1{color: rgba(255,255,255,0.8);}
+
+.features-two .features-info p{color: rgba(255,255,255,0.8);}
+
+/*============================================================================
+features Ends!!!
+============================================================================*/
+
+/*============================================================================
+Car-Image Starts!!! (section: 5)
+============================================================================*/
+
+.car{
+	background-image: url('../images/car.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+@media only screen and (min-width: 800px){
+
+.car{
+		height: 874px
+}
+	}
+
+.car .car-text{
+		position: absolute;
+		padding-left: 10px;
+		padding-right: 10px;
+		top: 150px;
+	}
+
+@media only screen and (min-width: 800px){
+
+.car .car-text{
+			top: 350px;
+			padding-right: 20px;
+			padding-left: 20px
+	}
+	}
+
+@media only screen and (min-width: 1200px){
+
+.car .car-text{
+			top: 440px
+	}
+	}
+
+.car .car-text-heading h1{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 40px;
+			font-weight: 400;
+			color: #FFF;
+			margin: 0;
+			padding-bottom: 45px;
+		}
+
+@media only screen and (min-width: 800px){
+
+.car .car-text-heading h1{
+				font-size: 60px;
+				font-weight: 300
+		}
+	}
+
+.car .car-text-info{
+		max-width: 450px;	
+		}
+
+.car .car-text-info p{
+			font-family:  'Open Sans', sans-serif;
+			font-size: 13px;
+			font-weight: 900;
+			line-height: 24px;
+			color: #FFF;
+			margin: 0;
+			padding-bottom: 25px;
+		}
+
+@media only screen and (min-width: 800px){
+
+.car .car-text-info p{
+				font-weight: normal
+		}
+	}
+
+.car .car-text-info a{
+			text-decoration: none;
+			color: #FFF;
+			font-family:  'Open Sans', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+.car .car-text-info .arrows{
+			padding-left: 20px;
+			}
+
+/*============================================================================
+Car-Image Ends!!!
+============================================================================*/

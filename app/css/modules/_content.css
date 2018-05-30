@@ -1,9 +1,20 @@
+/*============================================================================
+Content Starts!!! (section: 2)
+============================================================================*/
+
 .main-content{
 	width: 100%;
-	height: 540px;
-	background-color: lightpink;
-}
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
 
+	@mixin atMedium{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 50px;
+	}
+}
 
 .content{
 	width: 100%;
@@ -15,9 +26,12 @@
 		padding: 0 0 32px 0;
 		margin: 0;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 35px;
+		font-size: 31px;
 		font-weight: 300;
 		line-height: 24px;
+		@media only screen and (min-width: 640px){
+			font-size: 35px;
+		}
 	}
 
 	P{
@@ -31,25 +45,51 @@
 }
 
 .content-one{
-	padding-top: 115px;
-	.content:first-child{
-		padding-right:30px;
+	padding-top: 100px;
+	position: relative;
+
+	@media only screen and (min-width: 640px){
+		padding-right: 30px;
+		padding-top: 115px;
 	}
 
 	&--iphone-image img{
 		position: absolute;
-		display: block;
-		bottom: -100%;
-		right: 30px;
-		padding: 0;
-		margin: 0;
+		display: none;
+		visibility: hidden;
+		right: -90px;
+		bottom:0;
+		transform: scale(.7);
+		@media only screen and (min-width: 960px){
+			display: block;
+			visibility: visible;
+		}
+
+		@media only screen and (min-width: 1200px){
+			transform: scale(.9);
+			right: 0;
+		}
+		@media only screen and (min-width: 1290px){
+			transform: scale(1);
+		}
+		@media only screen and (min-width: 2048px){
+			right: -30px;
+		}
+		@media only screen and (min-width: 3500px){
+			right: -300px;
+		}
 	}
 }
 
 
 .content-two{
-	.content:first-child{
-		padding-right:30px;
+	&--info-one{
+		@media only screen and (min-width: 640px){
+			padding-right: 30px;
+		}
 	}
-
 }
+
+/*============================================================================
+Content Ends!!!
+============================================================================*/

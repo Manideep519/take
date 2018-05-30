@@ -1,6 +1,12 @@
+/*===========================================================================
+Gallery start!!! (section: 3)
+===========================================================================*/
 .gallery{
-	padding-left: 20px;
-	padding-right: 20px;
+
+	@mixin atMedium{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 
@@ -9,20 +15,25 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	max-width: 400px;
+	max-width: 100%;
 	height: 280px;
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 50px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-weight: 300;
 	color: #FFF;
 
+	@media only screen and (min-width: 500px){
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
 	&-four--large{
-		max-width: 400px;
+/*		max-width: 400px;
 		@media (min-width: 960px){
 			max-width: 800px;
-		}
+		}*/
 		.double-width{
 			@media (min-width: 960px){
 				max-width: 600px;
@@ -34,7 +45,11 @@
 		font-weight: 300;
 		font-size: 30px;
 		margin: 0;
-		padding-bottom: 20px;
+		padding-bottom: 0px;
+
+		@media  only screen and (min-width: 300px) {
+			padding-bottom: 20px;
+		}
 	}
 
 	p{	
@@ -44,23 +59,28 @@
 	}
 
 	a{
+		transition: all .5s;
 		position: absolute;
-		bottom: 60px;
-		display: inline-block;
-		padding-top: 30px;
+		bottom: 40px;
 		text-decoration: none;
 		color: #FFF;
 		font-size: 14px;
 		font-weight: 600;
+
+		@media only screen and (min-width:700px){
+			bottom:60px;
+		}
+
+		&:hover{
+			transform: scale(1.1);
+		}
+
 	}
 
 	.arrows{
 		padding-left: 10px;
-
 	}
-
 }
-
 
 .gallery-box-one{
 	background-color: #f5989d;
@@ -81,3 +101,21 @@
 .gallery-box-five{
 	background-color: #82ca9c;
 }
+
+.gallery-box-six{
+	background-image: url('../images/gallery/box-6.png');
+}
+
+
+.gallery-box-six{
+	display: block;
+	visibility: visible;
+
+	@media only screen and (min-width: 1200px) {
+		display: none;
+		visibility: hidden;
+	}
+}
+/*============================================================================
+Gallery ends!!!
+============================================================================*/
