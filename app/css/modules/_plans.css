@@ -1,0 +1,121 @@
+/*==================================================================================
+Buying plans starts!!! (section: 7)
+==================================================================================*/
+
+.plans{
+	background-color: rgb(246,247,250);
+	padding-top: 60px;
+	padding-bottom: 85px;
+	padding-left: 10px;
+	padding-right: 10px;
+	@mixin atMedium{
+		padding-top: 100px;
+		padding-bottom: 145px;
+	}
+}
+
+.plan-card{
+	transition: 1s;
+	max-width: 100%;
+	height: auto;
+	padding-left: 25px;
+	padding-top: 47px;
+
+	@media only screen and (min-width: 1000px){
+		padding-left: 53px;
+		height: 380px;
+	}
+
+
+	.tag{
+		transition: all .5s;
+		display: block;
+		text-align: center;
+		padding-top: 7px;
+		width: 110px;
+		height: 24px;
+		border-radius: 5px;
+		background-color:  rgb(225,225,225);
+		font-family:  'Open Sans', sans-serif;
+		font-size: 11px;
+		color: #FFF;
+		cursor: default;
+	}
+
+	h1{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 30.04px;
+		font-weight: 300;
+	}
+
+	p{
+		transition: all color .5s;
+		max-width: 450px;
+		font-family:  'Open Sans', sans-serif;
+		font-size: 14.02px;
+		line-height: 25.03px;
+		padding-bottom: 10px;
+		color: rgba(0,0,0,0.6);
+		padding-right: 10px;
+	}
+
+	.button{
+		display: block;
+		width: 150px;
+		height: 45px;
+		background-color:  rgb(130,202,156);
+		color: #FFF;
+		border-radius: 5px;
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13.02px;
+		padding-top: 16px;
+		font-weight: bold;
+		word-spacing: 2px;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+
+	img{
+		padding-left: 15px;
+		padding-top: 15px;
+		cursor: pointer;
+		padding-bottom: 20px
+	}
+}
+/*Hover Effects*/
+
+/*.plan-card-one:hover,
+.plan-card-two:hover{
+	background-color: #FFF;
+	box-shadow: -20px -10px 40px rgba(0,0,0,0.15),10px 10px 40px rgba(0,0,0,0.15);
+	.tag{
+		background-color: rgb(189,140,191);
+	}
+	p{
+		color: #000;
+	}
+}*/
+
+.plan-card-two{
+	background-color: #FFF;
+	box-shadow: -20px -10px 40px rgba(0,0,0,0.15),10px 10px 40px rgba(0,0,0,0.15);
+	.tag{
+		background-color: rgb(189,140,191);
+	}
+	p{
+		color: #000;
+	}
+}
+
+.plan-card-one:hover{
+	.tag{
+		background-color: rgb(189,140,191);
+	}
+	p{
+		color: #000;
+	}
+}
+/*==================================================================================
+Buying plans Ends!!!
+==================================================================================*/
