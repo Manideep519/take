@@ -4,8 +4,8 @@ Large-Hero Starts!!! (section: 1)
 .large-hero{
 	display: block;
 	position: relative;
-	background-image: url(../images/large-hero.png);
-	background-position:center center;
+	background-image: url(../images/large-hero-small.jpg);
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -19,6 +19,15 @@ Large-Hero Starts!!! (section: 1)
 	@media (min-width: 2048px){
 		height: 1100px;
 	}
+
+	@media (min-width: 900px){
+		background-image: url(../images/large-hero-medium.jpg);
+	}
+
+	@media (min-width: 1200px) and (min-resolution: 192dpi) {
+		background-image: url(../images/large-hero-high.png);
+	}
+
 }
 
 .website-logo{

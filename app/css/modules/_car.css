@@ -2,20 +2,27 @@
 Car-Image Starts!!! (section: 5)
 ============================================================================*/
 
-
 .car{
-	background-image: url('../images/car.png');
+	background-image: url('../images/car-small.jpg');
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top left;	
 	background-size: cover;
 	width: 100%;
-	height: 700px;
+	height: 600px;
 	position: relative;
 
 	@mixin atMedium{
 		height: 874px;
 	}
 
+	@media (min-width: 900px){
+		background-image: url('../images/car-medium.jpg');
+	}
+
+	@media (min-width: 1200px) and (min-resolution: 192dpi) {
+		background-image: url('../images/car-high.png');
+		background-position: left;
+	}
 
 
 	.car-text{
@@ -39,15 +46,10 @@ Car-Image Starts!!! (section: 5)
 		h1{
 			font-family: 'Open Sans', sans-serif;
 			font-size: 40px;
-			font-weight: 400;
+			font-weight: 300;
 			color: #FFF;
 			margin: 0;
 			padding-bottom: 45px;
-
-			@mixin atMedium{
-				font-size: 60px;
-				font-weight: 300;
-			}
 		}
 
 	}
@@ -58,15 +60,11 @@ Car-Image Starts!!! (section: 5)
 		p{
 			font-family:  'Open Sans', sans-serif;
 			font-size: 13px;
-			font-weight: 900;
+			font-weight: 300;
 			line-height: 24px;
 			color: #FFF;
 			margin: 0;
 			padding-bottom: 25px;
-
-			@mixin atMedium{
-				font-weight: normal;
-			}
 		}
 
 		a{
@@ -74,7 +72,7 @@ Car-Image Starts!!! (section: 5)
 			color: #FFF;
 			font-family:  'Open Sans', sans-serif;
 			font-size: 14px;
-			font-weight: bold;
+			font-weight: 300;
 		}
 		.arrows{
 			padding-left: 20px;

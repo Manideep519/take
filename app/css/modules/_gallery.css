@@ -91,11 +91,19 @@ Gallery start!!! (section: 3)
 }
 
 .gallery-box-three{
-	background-image: url('../images/gallery/box-3.png');
+	background-image: url('../images/gallery/box-3-medium.jpg');
+
+	@media (min-width: 1200px){
+		background-image: url(../images/gallery/box-3.png);
+	}
 }
 
 .gallery-box-four--large{
-	background-image: url('../images/gallery/box-4.png');
+	background-image: url('../images/gallery/box-4-medium.jpg');
+
+	@media (min-width: 1200px){
+		background-image: url(../images/gallery/box-4.png);
+	}
 }
 
 .gallery-box-five{
@@ -103,7 +111,11 @@ Gallery start!!! (section: 3)
 }
 
 .gallery-box-six{
-	background-image: url('../images/gallery/box-6.png');
+	background-image: url('../images/gallery/box-6-medium.jpg');
+
+	@media (min-width: 1200px){
+		background-image: url(../images/gallery/box-6.png);
+	}
 }
 
 

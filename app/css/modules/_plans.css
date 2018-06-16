@@ -15,7 +15,7 @@ Buying plans starts!!! (section: 7)
 }
 
 .plan-card{
-	transition: 1s;
+	transition: .5s;
 	max-width: 100%;
 	height: auto;
 	padding-left: 25px;
@@ -28,7 +28,7 @@ Buying plans starts!!! (section: 7)
 
 
 	.tag{
-		transition: all .5s;
+		transition: all .3s;
 		display: block;
 		text-align: center;
 		padding-top: 7px;
@@ -49,7 +49,7 @@ Buying plans starts!!! (section: 7)
 	}
 
 	p{
-		transition: all color .5s;
+		transition: all color .3s;
 		max-width: 450px;
 		font-family:  'Open Sans', sans-serif;
 		font-size: 14.02px;
@@ -85,8 +85,18 @@ Buying plans starts!!! (section: 7)
 }
 /*Hover Effects*/
 
-/*.plan-card-one:hover,
+.plan-card-one:hover,
 .plan-card-two:hover{
+	background-color: #FFF;
+	box-shadow: -20px -10px 40px rgba(0,0,0,0.15),10px 10px 40px rgba(0,0,0,0.15);
+	.tag{
+		background-color: rgb(189,140,191);
+	}
+	p{
+		color: #000;
+	}
+}
+/*.plan-card-two{
 	background-color: #FFF;
 	box-shadow: -20px -10px 40px rgba(0,0,0,0.15),10px 10px 40px rgba(0,0,0,0.15);
 	.tag{
@@ -97,25 +107,15 @@ Buying plans starts!!! (section: 7)
 	}
 }*/
 
-.plan-card-two{
-	background-color: #FFF;
-	box-shadow: -20px -10px 40px rgba(0,0,0,0.15),10px 10px 40px rgba(0,0,0,0.15);
-	.tag{
-		background-color: rgb(189,140,191);
-	}
-	p{
-		color: #000;
-	}
-}
 
-.plan-card-one:hover{
+/*.plan-card-one:hover{
 	.tag{
 		background-color: rgb(189,140,191);
 	}
 	p{
 		color: #000;
 	}
-}
+}*/
 /*==================================================================================
 Buying plans Ends!!!
 ==================================================================================*/

@@ -16,7 +16,7 @@ gulp.task('useref', function(){
 	.pipe(useref())
 	.pipe(gulpIf('*,.js', uglify()))
 	.pipe(gulpIf('*.css', cssNano()))
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('docs'))
 });
 
 
@@ -26,26 +26,26 @@ gulp.task('imageMin', function(){
 	.pipe(cache(imageMin({
 		interlaced:true
 	})))
-	.pipe(gulp.dest('dist/images'))
+	.pipe(gulp.dest('docs/images'))
 });
 
 
 gulp.task('fonts', function(){
 	console.log("Moving fonts");
 	return gulp.src('app/fonts/**/*')
-	.pipe(gulp.dest('dist/fonts'))
+	.pipe(gulp.dest('docs/fonts'))
 });
 
 
-gulp.task('clean:dist', function(){
+gulp.task('clean:docs', function(){
 	console.log("Deleting Old files");
-	return del.sync('dist');
+	return del.sync('docs');
 });
 
 
 gulp.task('build', function(callback){
 	console.log("Building assets");
-	runSequence('clean:dist',
+	runSequence('clean:docs',
 		['useref', 'imageMin', 'fonts'],
 		callback);
 });
